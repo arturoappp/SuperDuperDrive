@@ -34,3 +34,6 @@ CREATE TABLE IF NOT EXISTS CREDENTIALS (
     userid INT,
     foreign key (userid) references USERS(userid)
 );
+
+INSERT INTO USERS (username, salt, password, firstname, lastname)
+VALUES('a', 'ricaSalt', 'R5HO/sr9VVyKj3oXUtwi5b8WRSsavKs5CRieVAiUzPND6Ne+0kE9FtbP+SKMAnIhJQdpWMoiA8R5j7/SDkDdE8XFckbtdoPyZQks83g+P45AH7PWBan4RFgWJvqnSQWQU8axstQGLwoWo4WOACULZ8Ns2X60gDicesqAh8iy6h8SL73bKgmX+qsPd8+vsX5OADTmhKSm0wx5WnKU6y+CXN+PeJ5t8ypj5bXOkdlKBSZzjwn2BI8atFvT7+glPX4om+8uAr/evKO9NGxTAjyWwf5yTAVN2PFgU1aqV7q9jcu2KOalBvCMT7Hu9QS6vvvpY1+t5zwDbvbsctEItTYWVQ==', 'arturo', 'ramos');
